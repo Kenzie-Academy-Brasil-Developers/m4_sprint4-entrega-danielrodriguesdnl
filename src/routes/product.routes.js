@@ -11,6 +11,7 @@ productRouter.post("/", productsController.store);
 productRouter.get("/", productsController.index);
 productRouter.get("/:id", productsController.show);
 productRouter.patch("/:id", productsController.update);
+productRouter.delete("/:id", productsController.delete);
 
 productRouter.get("/category/:category_id", productsCategoryController.index);
 
