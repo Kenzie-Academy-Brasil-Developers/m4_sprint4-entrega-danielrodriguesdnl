@@ -10,10 +10,10 @@ services:
     depends_on:
       - db
     environment:
-      - DB_USER=postgres
+      - DB_USER=daniel
       - DB_HOST=db
       - DB=defaultdb
-      - DB_PASSWORD=docker
+      - DB_PASSWORD=dan199407
       - DB_PORT=5432
   db:
     container_name: db
@@ -21,6 +21,6 @@ services:
     ports:
       - 5432:5432
     environment:
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=docker
+      - POSTGRES_USER=daniel
+      - POSTGRES_PASSWORD=dan199407
       - POSTGRES_DB=defaultdb

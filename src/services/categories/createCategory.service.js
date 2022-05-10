@@ -1,4 +1,4 @@
-import database from "../database";
+import database from "../../database";
 
 const createCategoryService = async ({ name }) => {
   try {
